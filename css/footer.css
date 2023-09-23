@@ -162,25 +162,34 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer-main-div {
+    footer .container {
+        width: 584px;
+        display: flex;
         flex-direction: unset;
         flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
     }
 
     .href-and-logo_div {
-        margin-right: 24px;
+        margin-right: unset;
         align-items: unset;
-        margin-left: 102px;
-        min-width: 264px;
+        margin-left: unset;
+        margin-bottom: unset;
+        min-width: unset;
         width: 264px;
     }
 
     .footer-email {
-        margin-left: 102px;
+        margin-left: unset;
     }
 
     .footer-social-text {
         text-align: unset;
+    }
+
+    .footer-social {
+        margin-bottom: unset;
     }
 
     .email-text-span {
@@ -194,9 +203,16 @@
     .email-form input {
         width: 264px;
     }
-}
+} 
 
 @media screen and (min-width: 1440px)  {
+    footer .container {
+        width: 1158px;
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
     .href-and-logo_div {
         margin-right: 120px;
         margin-left: 0;

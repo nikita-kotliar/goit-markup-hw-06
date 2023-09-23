@@ -24,7 +24,8 @@
 .section-twoo-p {
     line-height: 24px;
     letter-spacing: 0.32px;
-    font-size: 16px
+    font-size: 16px;
+    font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
@@ -36,13 +37,16 @@
     }
 
     .section-twoo-ul li {
-        width: 356px;
+        width: calc((100% - 24px) / 2);
+    }
+    .section-twoo-text {
+        text-align: unset;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .section-twoo-ul li {
-        width: 264px;
+        width: calc((100% - 72px) / 4);
     }
     
     .section-twoo-svg_div {

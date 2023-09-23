@@ -20,12 +20,7 @@
 }
 
 .section-three-li {
-    display: flex;
     width: 264px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     padding: 0;
@@ -33,6 +28,7 @@
 }
 
 .section-three-li-div {
+    padding-top: 32px;
     padding-bottom: 32px;
 }
 
@@ -93,9 +89,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .section-three-li {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .section-three-li {
+        width: calc((100% - 72px) / 4);
+    }
+
     .section-three-ul {
         width: 1128px;
     }
